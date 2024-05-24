@@ -1,0 +1,138 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 16px; /* Un rem = 10px */
+    background: radial-gradient(circle, #038eff69, #03927a);
+}
+
+h1 { 
+    color: red;
+    text-align: center;
+    font-size: 6rem;
+    font-family: 'Salsa', Courier, monospace; /* Corregida la sintaxis de la fuente */
+}
+
+h2 {
+    color: blue;
+    font-size: 3.5rem;
+}
+
+h3 {
+    color: rgba(64, 0, 255, 0.959);
+}
+
+h4 {
+    color: rgba(255, 0, 242, 0.892);
+}
+
+span {
+    color: #bdb299;
+    font-size: 2rem;
+}
+
+.boton {
+    color: blue; /* Los botones quedan con letra azul al llamar esta clase */
+}
+
+.img-container { /* Se utilizó para reducir el tamaño de las imágenes */
+    float: left;
+    width: 30rem;
+}
+
+
+
+.texto-centrado {
+    text-align: left;
+}
+/*-----------------------------------------------------------------------------------------------------*/
+img {
+    width: 100%;
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-width: 400px; /* Tamaño máximo opcional */
+    border: 2px solid #ccc; /* Borde opcional */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+    border-radius: 8px; /* Esquinas redondeadas opcionales */
+}
+
+
+* Estilos para el contenedor principal */
+main {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan en varias líneas */
+    justify-content: space-between; /* Espacio entre elementos */
+    gap: 20px; /* Espacio entre elementos */
+}
+
+/* Estilos para cada sección de producto */
+main > div {
+    flex: 0 0 calc(50% - 20px); /* Ajustar el ancho de cada elemento */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Estilos para las imágenes */
+.img-container {
+    width: 100%; /* Ancho completo para las imágenes */
+    height: auto; /* Altura ajustada automáticamente */
+    margin-bottom: 10px; /* Espacio inferior entre imágenes */
+}
+
+/* Estilos para el texto */
+div > * {
+    margin-bottom: 10px; /* Espacio inferior entre elementos */
+}
+
+/* Estilos adicionales */
+.texto-centrado {
+    text-align: center; /* Alineación centrada para títulos */
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------*/
+/* contenedor del banner mujer */
+.banner-container {
+    
+    width:100%; /* Ocupa todo el ancho de la página */
+    overflow: hidden; /* Esconde cualquier desbordamiento */
+    margin-bottom: 20px; /* Espacio inferior */
+    position: relative;
+    }
+
+/* Estilo para la imagen del banner mujer */
+.banner-image {
+    width: 100%; /* La imagen se ajusta al ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina el espacio en blanco debajo de la imagen */
+}
+
+/*Estilo del texto en bannerm*/
+.banner-text {
+    position: absolute; /* Establece la posición absoluta para superponer el texto */
+    top: 50%; /* Coloca el texto en la mitad superior del contenedor */
+    left: 30%; /* Coloca el texto en el centro horizontal del contenedor */
+    transform: translate(-50%, -50%); /* Centra el texto vertical y horizontalmente */
+    color: white; /* Color del texto */
+    font-size: 100px; /* Tamaño del texto */
+    font-weight: bold; /* Negrita */
+    text-align: left; /* Alineación del texto */
+}
+
+/* Estilos para la grilla de imágenes */
+.grid-container {
+    display: grid; /* Utiliza el sistema de cuadrícula */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Columnas automáticas con un ancho mínimo de 200px */
+    gap: 100px; /* Espacio entre las imágenes */
+}
+
+/* Estilos para cada imagen */
+.grid-item {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    height: auto; /* Mantiene la proporción de la imagen */
+    text-align: center; /* Alineación del texto */
+}
+p1{
+    color: rgb(0, 4, 255); /* Color del texto */
+    font-weight: bold; /* Negrita */
+}
